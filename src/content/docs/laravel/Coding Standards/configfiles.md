@@ -12,7 +12,7 @@ title: Should not use  env() Outside Config Files
 
 
 
-Then, define the config file value using the same <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">env()</span> and the "My project" fallback value on the config level.
+Then, define the config file value using the same <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">env()</span>and the "My project" fallback value on the config level.
 
 ## config/app.php:
 
