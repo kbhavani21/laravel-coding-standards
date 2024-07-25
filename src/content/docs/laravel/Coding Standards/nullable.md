@@ -5,7 +5,7 @@ One mistake that can send you into a giant rabbit hole is forgetting to make fie
 
 ## Case 1: Adding new Relationship
 
-When you want to add a relationship to an existing site, remember that it is usually constrained by a foreign key. This means that if the relationship is not <font color="green">nullable,</font> you will see issues like this in your migrations:
+When you want to add a relationship to an existing site, remember that it is usually constrained by a foreign key. This means that if the relationship is not <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">nullable,</span> you will see issues like this in your migrations:
 
 ![No image](/src/assets/51_img1.png)
 
@@ -52,7 +52,7 @@ You can try to import it into your database, but you will get an error like this
 
 This happened because of two things:
 
-First - we have <font color="green">first_name</font> and <font color="green">last_name</font> as non-nullable fields in our database:
+First - we have <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">first_name</span> and <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">last_name</span> as non-nullable fields in our database:
 
 ```
 Schema::create('clients', function (Blueprint $table) {

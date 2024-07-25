@@ -3,7 +3,7 @@ title: Use Eloquent’s naming conventions for table names
 ---
 Laravel’s naming conventions for tables is easy and one best practice that will simplify your team’s life.
 
-First, let me remind you that the framework does it all for you when you’re using Artisan commands like <font color="green">php artisan make:model Post --migration --factory</font>.
+First, let me remind you that the framework does it all for you when you’re using Artisan commands like <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">php artisan make:model Post --migration --factory</span>.
 
 For whatever reason, if you can’t use those commands, here’s an overview:
 

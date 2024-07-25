@@ -8,7 +8,7 @@ When processing a large amount of data from the database, instead of fetching th
             ...
         }
 
-Use the <font color="green">create</font> method by specifying a fixed amount you want to process at a time and the closure for processing. Here is an example:
+Use the <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">create</span> method by specifying a fixed amount you want to process at a time and the closure for processing. Here is an example:
 
         Product::chunk(200, function ($products) {
             foreach ($products as $product) {

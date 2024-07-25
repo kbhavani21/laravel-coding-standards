@@ -5,7 +5,7 @@ Let’s use the most straightforward example possible: you have a contact form. 
 
 ## What if you could delay this until the user receives your server’s response?
 
-That’s precisely what <span class="text-[13px] bg-[#EDEEF3] px-2 py-1 rounded-lg border-2">dispatchAfterResponse()</span> does and this is one of my favorite tips:
+That’s precisely what <span class="text-[13px] bg-[#EDEEF3] px-2 py-1 ">dispatchAfterResponse()</span> does and this is one of my favorite tips:
 
     SendContactEmail::dispatchAfterResponse($input);
 

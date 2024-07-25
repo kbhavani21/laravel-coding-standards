@@ -2,8 +2,8 @@
 title:  Implement the down() Migration method
 ---
 
-Most developers often overlook implementing the <font color="green">down()</font>
- method in their migration file. This neglect can have significant consequences, particularly in successfully executing rollbacks. Therefore, it is a highly recommended Laravel best practice to always implement the <font color="green">down()</font> method for every <font color="green">up()</font> method in your migration file.
+Most developers often overlook implementing the <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">down()</span>
+ method in their migration file. This neglect can have significant consequences, particularly in successfully executing rollbacks. Therefore, it is a highly recommended Laravel best practice to always implement the <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">down()</span> method for every <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">up()</span> method in your migration file.
 
 For instance, if you have an orders table migration file that creates a new column, <span class="text-green-700">fee</span>:
 

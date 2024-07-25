@@ -11,7 +11,7 @@ If you process every one of them as soon as they’re submitted, this will happe
   - Your users will have to wait in front of a loading screen.
 :::
 
-This isn’t good <span class="text-[13px] bg-[#EDEEF3] px-2 py-1 rounded-lg border-2">UX</span> , and we can change that.
+This isn’t good <span class="text-[13px] bg-[#EDEEF3] px-2 py-1 ">UX</span> , and we can change that.
 
 Laravel has a queue system that will run all those tasks sequentially or with a limited amount of parallelism.
 

@@ -8,8 +8,8 @@ But often, we must remember that having the same settings for our database engin
 
 Let's look at an example:
 
--   Our database <font color="green">runs on Europe/Vilnius</font> timezone, set in the DB settings
--   Our Laravel application runs on UTC<font color="green">UTC</font> timezone, set in the <font color="green">config/app.php</font>
+-   Our database <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">runs on Europe/Vilnius<span> timezone, set in the DB settings
+-   Our Laravel application runs on UTC<span class="text-[13px] bg-[#EDEEF3] px-2 py-1">UTC<span> timezone, set in the <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">config/app.php<span>
 
 Running an update like this:
 
@@ -28,8 +28,8 @@ Will produce different results:
 
 ![No image](/src/assets/48_img1.png)
 
-- ID <font color="green">->1</font> has Europe/Vilnius timezone as it was created in the database by running a query there
-- ID <font color="green">->12</font> has UTC timezone as it was created by the Laravel application
+- ID <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">->1<span> has Europe/Vilnius timezone as it was created in the database by running a query there
+- ID <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">->12<span> has UTC timezone as it was created by the Laravel application
 
 This can lead to many issues and things that happen at unexpected times. For example, if this was a notification to be pushed out - we would have 2 different outcomes.
 

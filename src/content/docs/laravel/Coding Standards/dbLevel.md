@@ -15,7 +15,7 @@ And while it is a good thing to have - this comes with a drawback. Our database 
 
 Why is that? Well - this only protects us from the submission of forms.
 
-But what if someone adds the entry directly to the database like we did. The same applies if you create a unique table entry using <font color="green">Model::create()</font> - there is no protection. To solve this, we need to add a unique index to our database:
+But what if someone adds the entry directly to the database like we did. The same applies if you create a unique table entry using <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">Model::create()</span> - there is no protection. To solve this, we need to add a unique index to our database:
 
 ```
 Schema::create('invoices', function (Blueprint $table) {

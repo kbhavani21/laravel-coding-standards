@@ -4,19 +4,19 @@ title : Avoid "Non-Laravel" Table Names for Pivot Tables
 
 Laravel has a particular way to form many-to-many Pivot tables to auto-resolve them. Let's look at an example:
 
-- We have a <font color="green">clients</font> table
-- We have a <font color="green">orders</font> table
+- We have a <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">clients</span> table
+- We have a <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">orders</span> table
 
 What should our Pivot table name be?
 
-- <font color="green">client_order</font>
-- <font color="green">order_client</font>
-- <font color="green">clients_orders</font>
-- <font color="green">orders_clients</font>
+- client_order
+- order_client
+- clients_orders
+- orders_clients
 - etc...
 
 
-In this case, Laravel would expect it to be <font color="green">client_order</font> , and if we follow that, we can define our relationship like this:
+In this case, Laravel would expect it to be<span class="text-[13px] bg-[#EDEEF3] px-2 py-1">client_order</span> , and if we follow that, we can define our relationship like this:
 
 **Client Model**
 
@@ -34,7 +34,7 @@ In this case, Laravel would expect it to be <font color="green">client_order</fo
     }
 
 
-Now, let's do an example where we have a different table name, in this case <font color="green">-client_order.</font>
+Now, let's do an example where we have a different table name, in this case <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">-client_order.</span>
 
 What will happen then? Well, our relationship will break:
 

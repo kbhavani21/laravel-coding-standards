@@ -5,9 +5,9 @@ The down() (used by the php artisan migrate:rollback command) is ran when you ne
 
 Some people use it, some don’t.
 
-If you belong to the people who use it, you should make sure your <font color="green">down()</font> method is implemented correctly.
+If you belong to the people who use it, you should make sure your <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">down()</span> method is implemented correctly.
 
-Basically, the<font color="green">down()</font> method must do the opposite of the <font color="green">up()</font> method.
+Basically, the<span class="text-[13px] bg-[#EDEEF3] px-2 py-1">down()</span> method must do the opposite of the <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">up()</span> method.
 
     use IlluminateSupportFacadesSchema;
     use IlluminateDatabaseSchemaBlueprint;
