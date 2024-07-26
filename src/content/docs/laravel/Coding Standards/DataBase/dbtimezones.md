@@ -35,6 +35,8 @@ This can lead to many issues and things that happen at unexpected times. For exa
 
 Now, if we set the timezone on our application and database to be the same - this will never be an issue.
 
-<span class="">Note:</span> Avoid changing your Database or Laravel timezone settings if you already have a live application, as it will lead to incorrect times.
+:::Note:
+ Avoid changing your Database or Laravel timezone settings if you already have a live application, as it will lead to incorrect times.
+ :::
 
 

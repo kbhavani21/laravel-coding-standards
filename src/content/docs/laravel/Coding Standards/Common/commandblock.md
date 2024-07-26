@@ -13,4 +13,4 @@ For example:
             // Calculate and return the total cost
         }
 
-In this example, the method name <span style="color:#1F843E" class=" !text-[#1F843E] ">calculateTotalOrderCost</span> clearly indicates its purpose, making additional documentation unnecessary.
+In this example, the method name <span  class=" text-[13px] bg-[#EDEEF3] px-2 py-1">calculateTotalOrderCost</span> clearly indicates its purpose, making additional documentation unnecessary.
