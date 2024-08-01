@@ -21,12 +21,12 @@ As you can see, no <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">->foreign()<
 
 This works fine for the most part, but once we have some clients and orders in our system - deleting a client will cause an issue:
 
-![foreign key explaination](/src/assets/42_img1.png) 
+![foreign key explaination](/images/42_img1.png) 
 <br>
 
 If we look at our database, we can see that we still have an order with our deleted client:
 
-![foreign key explaination](/src/assets/42_img2.png)
+![foreign key explaination](/images/42_img2.png)
 
 This issue happened because our database has no idea what to do in that scenario. All it thinks of - is that we have a number in our <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">client</span> column, which is not tied to anything.<br><br>
 You can solve this issue with foreign keys, as this will tell the database to check if the client exists before doing anything with the <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">client_id column</span>. Let's look at an example:<br><br>
@@ -41,12 +41,12 @@ You can solve this issue with foreign keys, as this will tell the database to ch
 
 Now we will do the same action - attempting to delete our client:
 
-![foreign key explaination](/src/assets/42_img3.png)
+![foreign key explaination](/images/42_img3.png)
 
 
 This time, our deletion has failed, but our Orders table is still working:
 
-![foreign key explaination](/src/assets/42_img4.png)
+![foreign key explaination](/images/42_img4.png)
 
 Why did this happen? Well, in the database, we have a <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">constraint</span> added. This limits what action can happen with our parent resource.
 
@@ -78,6 +78,6 @@ There is one small thing to note here - column naming. In our example, we used <
 While this is a personal preference - it does help you to understand what the column is for. If you have <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">client-</span> you might think it's some identifier for the client (especially in bigger databases), but if you have <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">client_id -</span> you know it's a foreign key to the <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">clients</span> table. A quick look at a database like this - points us in the right direction:
 
 
-![foreign key explaination](/src/assets/42_img5.png)
+![foreign key explaination](/images/42_img5.png)
 
 

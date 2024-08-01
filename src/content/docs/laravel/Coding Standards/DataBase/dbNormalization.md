@@ -6,7 +6,7 @@ When starting a new database design, following [Database Normalization](https://
 
 Take a look at this database example:
 
-![No image](/src/assets/47_img1.png)
+![No image](/images/47_img1.png)
 
 Do you see something wrong with it? If yes - fantastic, you have a good eye! If not, here's the list:
 
@@ -38,6 +38,6 @@ This is a lot of flexibility that we gain by following normalization rules. And 
 
 Here's what our database can look like after normalization:
 
-![No image](/src/assets/47_img2.png)
+![No image](/images/47_img2.png)
 
 And while this required a lot more tables - everything is now in its own place, and we can efficiently work with our data in any way we want.

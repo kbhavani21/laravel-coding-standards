@@ -5,7 +5,7 @@ title : Avoid Not Using "ON DELETE" Actions
 
 When defining a foreign key - we tend to ignore cascading actions and leave it as it is. But that causes another typical mistake to happen:
 
-![on Delete explaination](/src/assets/46_img1.png)
+![on Delete explaination](/images/46_img1.png)
 
 This mistake happens when we try to delete a User from our database, but this user has some Posts. And since we did not inform our database what it should do once this happens - it just throws an error.
 

@@ -11,7 +11,7 @@ $request->validate([
 
 And while it is a good thing to have - this comes with a drawback. Our database is not protected!
 
-![No image](/src/assets/50_img1.png)
+![No image](/images/50_img1.png)
 
 Why is that? Well - this only protects us from the submission of forms.
 
@@ -27,7 +27,7 @@ Schema::create('invoices', function (Blueprint $table) {
 ```
 Once this is done - it will not matter if the form is submitted or you are trying to insert the data directly into the database - it will always check if the value is unique. Let's look at this example from our database query:
 
-![No image](/src/assets/50_img2.png)
+![No image](/images/50_img2.png)
 
 And if we try to do that with our Model:
 
@@ -40,6 +40,6 @@ Invoice::create([
 
 We will still get a database error:
 
-![No image](/src/assets/50_img3.png)
+![No image](/images/50_img3.png)
 
 <span class="font-semibold">Note:</span> This also prevents a race condition where two or more people attempt to simultaneously create the same unique value.

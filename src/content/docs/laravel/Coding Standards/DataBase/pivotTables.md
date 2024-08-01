@@ -5,11 +5,11 @@ When creating pivot tables, we often skip adding timestamps or primary keys. Thi
 
 In our system, we have products and categories. Product has many categories - the typical scenario that looks like this in our database:
 
-![No image](/src/assets/49_img1.png)
+![No image](/images/49_img1.png)
 
 It works as we would expect. But today, a new requirement came - we need to sort the categories by the time they were attached. And now - we have an issue. We have no idea when these categories were added. So what can we do here? Well, we can add timestamps to our pivot table:
 
-![No image](/src/assets/49_img2.png)
+![No image](/images/49_img2.png)
 
 Now, we can order our categories by the time they are added. This dramatically improves the potential for data access and control in your application.
 

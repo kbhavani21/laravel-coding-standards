@@ -3,7 +3,7 @@ title:  Storing Empty Strings Instead of Null
 ---
 Have you ever looked at a database and seen something like this?
 
-![No image](/src/assets/53_img1.png)
+![No image](/images/53_img1.png)
 
 And then you visit migrations in the hope of understanding what is going on, but you see this:
 

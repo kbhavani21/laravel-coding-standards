@@ -38,7 +38,7 @@ Now, let's do an example where we have a different table name, in this case <spa
 
 What will happen then? Well, our relationship will break:
 
-![Non Laravel explaination](/src/assets/45_img1.png)
+![Non Laravel explaination](/images/45_img1.png)
 
 Now, it is not such a big deal at the Database level, but on our Laravel side - we have to add a table name to our relationship:
 

@@ -26,7 +26,7 @@ Post::where('id', 12)
 ```
 Will produce different results:
 
-![No image](/src/assets/48_img1.png)
+![No image](/images/48_img1.png)
 
 - ID <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">->1<span> has Europe/Vilnius timezone as it was created in the database by running a query there
 - ID <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">->12<span> has UTC timezone as it was created by the Laravel application

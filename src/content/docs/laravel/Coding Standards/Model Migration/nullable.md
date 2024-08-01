@@ -7,7 +7,7 @@ One mistake that can send you into a giant rabbit hole is forgetting to make fie
 
 When you want to add a relationship to an existing site, remember that it is usually constrained by a foreign key. This means that if the relationship is not <span class="text-[13px] bg-[#EDEEF3] px-2 py-1">nullable,</span> you will see issues like this in your migrations:
 
-![No image](/src/assets/51_img1.png)
+![No image](/images/51_img1.png)
 
 
 Why did this happen? Well, we already have data in our system, but now attempted to add another relationship like this:
@@ -21,7 +21,7 @@ Schema::table('clients', function (Blueprint $table) {
 ```
 This causes a problem with our old records. As we have data already:
 
-![No image](/src/assets/51_img2.png)
+![No image](/images/51_img2.png)
 
 They will not have this relationship in place (as you can see, it failed and has 0 there...), so we have to make it nullable:
 
@@ -48,7 +48,7 @@ id,first_name,last_name
 ```
 You can try to import it into your database, but you will get an error like this:
 
-![No image](/src/assets/51_img3.png)
+![No image](/images/51_img3.png)
 
 This happened because of two things:
 
@@ -97,6 +97,6 @@ Schema::create('clients', function (Blueprint $table) {
 
 Re-running our import script will now work as expected:
 
-![No image](/src/assets/51_img4.png)
+![No image](/images/51_img4.png)
 
 That's it. Adding nullables is a great way to avoid issues with your database. 
