@@ -10,7 +10,7 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Saras',
+			title: 'Saras Laravel',
 		
 			sidebar: [
 				{
