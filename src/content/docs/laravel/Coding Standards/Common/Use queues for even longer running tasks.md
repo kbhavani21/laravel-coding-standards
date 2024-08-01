@@ -20,4 +20,4 @@ Laravel has a queue system that will run all those tasks sequentially or with a 
  - Use queues for even longer running tasks
 :::
 
- <img src="/src/assets/queue.png" alt="queue for even longer running task" style="margin-left: 60px; margin-top:30px">
+![A rocketship in space](/src/assets/queue.png)
