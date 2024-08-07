@@ -15,7 +15,8 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Laravel',
-					autogenerate: { directory: 'laravel' },
+					autogenerate: { directory: 'laravel' ,collapsed: true,},
+					
 				},
 			],
 			customCss: ['./src/tailwind.css'],
